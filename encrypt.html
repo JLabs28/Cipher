@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt a Message</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Encrypt a Word</h1>
+<p>"Choose any word, select a shift value between 0 and 9, and craft a riddle to help others solve it!"</p>
+  </header>
+  <main>
+      <label for="word">Word to Encrypt:</label>
+      <input type="text" id="word" placeholder="Enter your word here">
+
+      <label for="shift">Shift Value (0-9):</label>
+      <input type="number" id="shift" value="3" min="0" max="9">
+
+      <label for="riddle">Riddle (Clue):</label>
+      <textarea id="riddle" placeholder="Enter your clue here"></textarea>
+
+      <button id="encrypt-button">Encrypt</button>
+      <p id="output"></p>
+    <a href="index.html" class="button">Back to Main Page</a>
+  </main>
+  <script src="encrypt.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrypt a Message</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Decrypt a Word</h1>
+    <p>Select an encrypted message to decrypt by solving the riddle!</p>
+    <h2 id="timer">Time Left: 5:00</h2>
+  </header>
+  <main>
+    <div id="decrypt-section">
+      <label for="encrypted-word">Select Encrypted Message:</label>
+      <select id="encrypted-messages-list">
+        <option value="">Select an encrypted message</option>
+      </select>
+
+      <label id="riddle-clue"><strong>Riddle:</strong> <span></span></label>
+      <label id="encrypted-text"><strong>Encrypted Text:</strong> <span></span></label>
+      <label for="shift">Shift Value:</label>
+      <input type="number" id="shift" value="3" min="0" max="9" readonly>
+
+      <label for="guess">Your Guess:</label>
+      <input type="text" id="guess" placeholder="Enter your guess here">
+
+      <button id="decrypt-button">Submit Guess</button>
+      <p id="output"></p>
+    </div>
+    <a href="index.html" class="button">Back to Main Page</a>
+    <button id="delete-button">Delete All Messages</button>
+  </main>
+  <script src="decrypt.js"></script>
+</body>
+</html>
